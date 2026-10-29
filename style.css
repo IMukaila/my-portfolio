@@ -71,3 +71,26 @@ footer {
     text-align: center;
     padding: 20px;
 }
+/* Dark mode styles */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode header {
+    background-color: #222;
+}
+
+.dark-mode section {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+#theme-toggle {
+    padding: 8px 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
