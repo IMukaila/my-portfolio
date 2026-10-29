@@ -24,3 +24,22 @@ themeToggle.addEventListener("click", function () {
         themeToggle.textContent = "Dark Mode";
     }
 });
+
+const backToTop = document.getElementById("back-to-top");
+
+// Show the button when the visitor scrolls down
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 300) {
+        backToTop.style.display = "block";
+    } else {
+        backToTop.style.display = "none";
+    }
+});
+
+// Scroll smoothly to the top when clicked
+backToTop.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
